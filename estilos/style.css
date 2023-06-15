@@ -90,6 +90,7 @@ table{
     width: 300px;
     border-collapse: collapse;
     margin: 30px auto 45px auto;
+    position: relative;
 }
 
 caption{
@@ -101,6 +102,8 @@ caption{
 thead{
     background-color: var(--cor4);
     color: var(--cor5);
+    position: sticky;
+    top: -1px;
 }
 
 th, td{
