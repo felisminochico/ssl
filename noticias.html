@@ -29,6 +29,10 @@
         main > article > h2::after{
             content: none;
         }
+
+        tr:nth-child(even){
+            background-color: var(--cor3);
+        }
     </style>
 </head>
 <body>
@@ -61,35 +65,35 @@
 
                 <thead>
                     <tr>
-                        <th>Nome</th>
-                        <th>Idade</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Idade</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     <tr>
                         <td>Tchoby Bizzy</td>
-                        <td>19</td>
+                        <td class="numero">19</td>
                     </tr>
                     <tr>
                         <td>Ice Niga</td>
-                        <td>19</td>
+                        <td class="numero">19</td>
                     </tr>
                     <tr>
                         <td>Best Rap</td>
-                        <td>20</td>
+                        <td class="numero">20</td>
                     </tr>
                     <tr>
                         <td>Tequilaz Fresh</td>
-                        <td>19</td>
+                        <td class="numero">19</td>
                     </tr>
                     <tr>
                         <td>Lilson Quest</td>
-                        <td>17</td>
+                        <td class="numero">17</td>
                     </tr>
                     <tr>
                         <td>Star Fire</td>
-                        <td>18</td>
+                        <td class="numero">18</td>
                     </tr>
                 </tbody>
             </table>
