@@ -1,24 +1,24 @@
 @charset "UTF-8";
 
 @font-face{
-    font-family: 'Cabecalho';
-    src: url('../fontes/YujiHentaiganaAkebono-Regular.ttf') format(truetype);
+    font-family: 'padrao';
+    src: url(../fontes/Roboto/Roboto-Regular.ttf) format(truetype);
 }
 
-@font-face {
-    font-family: 'padrao';
-    src: url('../fontes/static/Montserrat-Medium.ttf') format(truetype);
+@font-face{
+    font-family: 'Cabecalho';
+    src: url('../fontes/YujiHentaiganaAkebono-Regular.ttf') format(truetype);
 }
 
 :root{
     --font-cabecalho: 'Cabecalho';
     --fonte-padrao: 'padrao';
 
-    --cor1: #00747C;
-    --cor2: #00BBC9;
-    --cor3: #CACACA;
-    --cor4: #878787;
-    --cor5: #202022;
+    --cor1: #0710F3;
+    --cor2: #2C53F8;
+    --cor3: #AABEFB;
+    --cor4: #75A0FC;
+    --cor5: #50A4FE;
 }
 
 *{
@@ -27,11 +27,11 @@
 }
 
 body{
-    background-image: linear-gradient(to right, var(--cor2), var(--cor1));
+    background-image: linear-gradient(to right, var(--cor4), var(--cor1));
 }
 
 header{
-    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
+    background-image: linear-gradient(to right, var(--cor1), var(--cor4));
     color: white;
     padding: 10px 10px 15px 10px;
 }
@@ -40,7 +40,7 @@ header > h1{
     font-family: var(--font-cabecalho);
     text-align: center;
     padding: 45px 0px 0px 0px;
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 header > p{
@@ -60,9 +60,10 @@ header a{
 
 header a:hover{
     background-color: var(--cor3);
-    color: var(--cor5);
+    color: #000000;
     border-radius: 10px;
     transition-duration: 0.5s;
+    font-weight: bold;
 }
 
 main{
@@ -85,7 +86,7 @@ main > article > h1{
     background-image: linear-gradient(to right, #87878728, transparent);
     border-radius: 0px 10px;
     margin: 12px 0px 16px 0px;
-    font-size: 1.4em;
+    font-size: 1.7em;
 }
 
 table{
@@ -98,12 +99,12 @@ table{
 caption{
     font-size: 1.1em;
     font-weight: bold;
-    padding: 2px;
+    padding: 5px 0px;
 }
 
 thead{
     background-color: var(--cor4);
-    color: var(--cor5);
+    color: rgb(0, 0, 0);
     position: sticky;
     top: -1px;
 }
@@ -139,7 +140,7 @@ main > article > p{
     margin-bottom: 8px;
 }
 
-main > article > img{
+main > article > picture> img, source{
     display: block;
     width: 90%;
     margin: 25px auto;
@@ -154,7 +155,8 @@ main > article > p > span > a{
 
 main > article > p > span > a:hover{
     background-color: var(--cor3);
-    color: var(--cor5);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
 }
 
 main > article > p > span > a::after{
@@ -162,10 +164,9 @@ main > article > p > span > a::after{
 }
 
 footer{
-    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
-    color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor1), var(--cor4));
+    color: white;
     font-family: var(--fonte-padrao);
     padding: 10px;
     text-align: center;
-    font-weight: bold;
 }
