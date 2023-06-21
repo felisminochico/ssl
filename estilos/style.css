@@ -89,6 +89,10 @@ main > article > h1{
     font-size: 1.7em;
 }
 
+div#tabela{
+    overflow-x: auto;
+}
+
 table{
     width: 300px;
     border-collapse: collapse;
