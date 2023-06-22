@@ -14,11 +14,11 @@
     --font-cabecalho: 'Cabecalho';
     --fonte-padrao: 'padrao';
 
-    --cor1: #0710F3;
-    --cor2: #2C53F8;
-    --cor3: #AABEFB;
-    --cor4: #75A0FC;
-    --cor5: #50A4FE;
+    --cor1: #103778;
+    --cor2: #0593A2;
+    --cor3: #E3371E;
+    --cor4: #FF7A48;
+    --cor5: #151F30;
 }
 
 *{
@@ -27,11 +27,11 @@
 }
 
 body{
-    background-image: linear-gradient(to right, var(--cor4), var(--cor1));
+    background-color: var(--cor5);
 }
 
 header{
-    background-image: linear-gradient(to right, var(--cor1), var(--cor4));
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
     color: white;
     padding: 10px 10px 15px 10px;
 }
@@ -59,7 +59,7 @@ header a{
 }
 
 header a:hover{
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     color: #000000;
     border-radius: 10px;
     transition-duration: 0.5s;
@@ -107,7 +107,7 @@ caption{
 }
 
 thead{
-    background-color: var(--cor4);
+    background-color: var(--cor2);
     color: rgb(0, 0, 0);
     position: sticky;
     top: -1px;
@@ -158,9 +158,11 @@ main > article > p > span > a{
 }
 
 main > article > p > span > a:hover{
-    background-color: var(--cor3);
+    background-color: var(--cor2);
     color: rgb(0, 0, 0);
     font-weight: bold;
+    transition-duration: .4s;
+    border-radius: 5px;
 }
 
 main > article > p > span > a::after{
@@ -168,7 +170,7 @@ main > article > p > span > a::after{
 }
 
 footer{
-    background-image: linear-gradient(to right, var(--cor1), var(--cor4));
+    background-image: linear-gradient(to right, var(--cor1), var(--cor2));
     color: white;
     font-family: var(--fonte-padrao);
     padding: 10px;
