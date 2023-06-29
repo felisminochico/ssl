@@ -122,6 +122,33 @@ th, td{
     text-align: center;
 }
 
+main > article > section{
+    background-color: gray;
+    height: 45vh;
+    padding: 20px;
+    margin: 20px -15px;
+    box-shadow: inset 3px 3px 5px 6px rgba(0, 0, 0, 0.384);
+}
+
+main > article > section#imagem-1{
+    background: gray url('../multimidias/background001.jpg') no-repeat right center fixed;
+    background-size: cover;
+}
+
+main > article > section#imagem-2{
+    background: gray url(../multimidias/background002.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+main > article > section > p{
+    line-height: 2em;
+    font-size: 1.4em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.452);
+    display: inline-block;
+    padding: 4px;
+}
+
 main > article > h2{
     font-size: 1.1em;
     box-shadow: inset 3px 3px 5px 8px rgba(0, 0, 0, 0.308);
