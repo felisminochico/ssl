@@ -124,19 +124,19 @@ th, td{
 
 main > article > section{
     background-color: gray;
-    height: 45vh;
+    height: 350px;
     padding: 20px;
     margin: 20px -15px;
     box-shadow: inset 3px 3px 5px 6px rgba(0, 0, 0, 0.384);
 }
 
 main > article > section#imagem-1{
-    background: gray url('../multimidias/background001.jpg') no-repeat right center fixed;
+    background: gray url('../multimidias/background001-2.png') no-repeat right center fixed;
     background-size: cover;
 }
 
 main > article > section#imagem-2{
-    background: gray url(../multimidias/background002.jpg) no-repeat center center fixed;
+    background: gray url(../multimidias/background002-2.png) no-repeat center center fixed;
     background-size: cover;
 }
 
