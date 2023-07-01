@@ -138,6 +138,7 @@ main > article > section#imagem-1{
 main > article > section#imagem-2{
     background: gray url(../multimidias/background002-2.png) no-repeat center center fixed;
     background-size: cover;
+    min-height: 380px;
 }
 
 main > article > section > p{
