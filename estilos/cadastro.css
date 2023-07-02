@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+:root{
+    --font-cabecalho: 'Cabecalho';
+    --fonte-padrao: 'padrao';
+
+    --cor1: #103778;
+    --cor2: #0593A2;
+    --cor3: #E3371E;
+    --cor4: #FF7A48;
+    --cor5: #151F30;
+}
+
+main > article > h1{
+    text-align: center;
+}
+
+fieldset{
+    padding: 8px;
+    max-width: 370px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.349);
+}
+
+main p{
+    margin: 6px 0px 12px 6px;
+}
+
+legend{
+    font-weight: bold;
+    color: var(--cor2);
+
+}
+
+input{
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+label{
+    font-weight: bold;
+}
+
+#inome{
+    height: 26px;
+    width: 200px;
+    background-color: #ecbfae56;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#isenha{
+    background-color: #ecbfae56;
+    width: 200px;
+    height: 26px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+#iemail{
+    height: 26px;
+    width: 200px;
+    background-color: #ecbfae56;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#itel{
+    height: 26px;
+    width: 200px;
+    background-color: #ecbfae56;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#idata{
+    height: 26px;
+    width: 200px;
+    background-color: #ecbfae56;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#isexofem, #isexomasc{
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+#ipais{
+    height: 26px;
+    width: 200px;
+    background-color: #ecbfae56;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#iprov{
+    height: 26px;
+    width: 200px;
+    background-color: #ecbfae56;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#iprof{
+    height: 26px;
+    width: 200px;
+    background-color: #ecbfae56;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+#imsg{
+    background-color: #ecbfae56;
+    padding: 4px;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+p#botoes{
+    max-width: 400px;
+    margin: auto;
+    margin-top: -16px;
+}
+
+#enviar{
+    display: inline-block;
+    background-color: var(--cor2);
+    width: 110px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 7px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+#limpar{
+    display: inline-block;
+    background-color: rgb(255, 0, 0);
+    width: 110px;
+    height: 40px;
+    border-radius: 7px;
+    color: white;
+    font-weight: bolder;
+    font-size: 1em;
+}
+

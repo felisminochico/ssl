@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/cadastro.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>SSL</h1>
+        <p>Software de Sistema de Lançamentos</p>
+        <nav>
+            <a href="index.html" target="_self" rel="prev">Home</a>
+            <a href="eventos.html" target="_self" rel="prev">Eventos</a>
+            <a href="cadastro.html" target="_self">Cadastro</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h1>Cadastre-se</h1>
+
+            <form method="post" action="enviado.html" autocomplete="on">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <p>
+                        <label for="inome">Nome</label>
+                        <input type="text" name="nome" id="inome" required autocomplete="name" placeholder="Nome completo">
+                    </p>
+                    <p>
+                        <label for="isenha">Senha</label>
+                        <input type="password" name="senha" id="isenha" autocomplete="new-password" placeholder="8 dígitos no mínimo" minlength="8" maxlength="20" required>
+                    </p>
+                    <p>
+                        <label for="iemail">Email</label>
+                        <input type="email" name="email" id="iemail" autocomplete="email" placeholder="usuario@gmail.com" required>
+                    </p>
+                    <p>
+                        <label for="itel">Número de Telefone</label>
+                        <input type="tel" name="tel" id="itel" placeholder="999 999 999" required pattern="^[0-9]{3} [0-9]{3} [0-9]{3}$">
+                    </p>
+                    <p>
+                        <label for="idata">Data de Nascimento</label>
+                        <input type="date" name="data" id="idata" required>
+                    </p>
+                    <fieldset>
+                        <legend>Sexo</legend>
+                        <p>
+                            <input type="radio" name="sexo" id="isexomasc" checked required> <label for="isexomasc"> Masculino</label> <br>
+                            <input type="radio" name="sexo" id="isexofem" required> <label for="isexofem"> Feminino</label>
+                        </p>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Outros dados do usuário</legend>
+                    <p>
+                        <label for="ipais">País</label>
+                        <input type="text" name="pais" id="ipais" list="lstpais" value="Angola" required placeholder="Seu país">
+                        <datalist id="lstpais">
+                            <option value="África do Sul"></option>
+                            <option value="Angola"></option>
+                            <option value="Argentina"></option>
+                            <option value="Brazil"></option>
+                            <option value="Cabo Verde"></option>
+                            <option value="China"></option>
+                            <option value="Dinamarca"></option>
+                            <option value="Egipto"></option>
+                            <option value="Espanha"></option>
+                            <option value="Estados Unidos da América"></option>
+                            <option value="França"></option>
+                            <option value="Filipinas"></option>
+                            <option value="Ghana"></option>
+                            <option value="Holanda"></option>
+                            <option value="Japão"></option>
+                            <option value="Mônaco"></option>
+                            <option value="Moçambique"></option>
+                            <option value="Namíbia"></option>
+                            <option value="Nigéria"></option>
+                            <option value="Portugal"></option>
+                            <option value="Quénia"></option>
+                            <option value="Ruanda"></option>
+                            <option value="São Tomé e Príncipe"></option>
+                        </datalist>
+                    </p>
+                    <p>
+                        <label for="iprov">Província</label>
+                        <input type="text" name="prov" id="iprov" list="lstprov" value="Namibe" required placeholder="Sua província">
+                        <datalist id="lstprov">
+                            <optgroup label="Região Central">
+                                <option value="Cuando Cubango"></option>
+                                <option value="Huambo"></option>
+                                <option value="Moxico"></option>
+                            </optgroup>
+                            <optgroup label="Região Nordeste">
+                                <option value="Bengo"></option>
+                                <option value="Cabinda"></option>
+                                <option value="Luanda"></option>
+                                <option value="kwanza Norte"></option>
+                                <option value="Kwanza Sul"></option>
+                                <option value="Lunda Norte"></option>
+                                <option value="Lunda Sul"></option>
+                                <option value="Uíge"></option>
+                                <option value="Zaire"></option>
+                                </optgroup>
+                            <optgroup label="Região sudeste">
+                                <option value="Benguela"></option>
+                                <option value="Cunene"></option>
+                                <option value="Namibe"></option>
+                                <option value="Huíla"></option>
+                            </optgroup>
+                        </datalist>
+                    </p>
+                    <p>
+                        <label for="iprof">Profissão</label>
+                        <input type="text" name="prof" id="iprof" list="lstprof" required placeholder="Sua profissão">
+                        <datalist id="lstprof">
+                            <option value="Camionista"></option>
+                            <option value="Contabilista"></option>
+                            <option value="Cozinheiro"></option>
+                            <option value="Dentista"></option>
+                            <option value="Desenvolvedor"></option>
+                            <option value="Empreendedor"></option>
+                            <option value="Farmacologista"></option>
+                            <option value="Nutricionista"></option>
+                            <option value="Professor"></option>
+                            <option value="Programador"></option>
+                        </datalist>
+                    </p>
+                    <p>
+                        <label for="imsg">Mensagem</label> <br>
+                        <textarea name="msg" id="imsg" cols="30" rows="10" required placeholder="Escreva uma mensagem..."></textarea>
+                    </p>
+                </fieldset>
+                <p id="botoes">
+                    <input type="submit" value="Enviar" id="enviar">
+                    <input type="reset" value="Limpar" id="limpar">
+                </p>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <p>Site Desenvolvido pela <strong>SSL</strong>.</p>
+    </footer>
+</body>
+</html>
