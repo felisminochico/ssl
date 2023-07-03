@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+:root{
+    --font-cabecalho: 'Cabecalho';
+    --fonte-padrao: 'padrao';
+
+    --cor1: #103778;
+    --cor2: #0593A2;
+    --cor3: #E3371E;
+    --cor4: #FF7A48;
+    --cor5: #151F30;
+}
+
+
+
+header > h1{
+    color: var(--cor1);
+}
+
+header > p{
+    color: black;
+}
+
+header > nav{
+    display: none;
+}
+
+hr{
+    display: block;
+}
+
+main > article > h2{
+    background: none;
+}
+
+main > article > section{
+    min-height: 100px;
+}
+
+main > article > section#imagem-1{
+    background: none;
+}
+
+main > article > section#imagem-2{
+    background: none;
+}
+
+main > article > section > p{
+    background: none;
+    color: black;
+}
+
+main > article > div > table > thead{
+    position: static;
+}
+
+main > article > p > span > a{
+    background: none;
+    padding: 0px;
+    color: black;
+    font-weight: bold;
+}
+
+main > article > p > span > a::after{
+    content: none;
+}
+
+main::after{
+    content: 'Este site foi impresso pela SSL. https://felisminochico.github.io/ssl';
+}
+
+fieldset#outros-dados{
+    margin-top: 160px;
+}
+
+p#botoes{
+    display: none;
+}
+
+footer{
+    display: none;
+}

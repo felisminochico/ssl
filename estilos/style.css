@@ -66,6 +66,10 @@ header a:hover{
     font-weight: bold;
 }
 
+hr{
+    display: none;
+}
+
 main{
     max-width: 800px;
     margin: auto;

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/cadastro.css">
+    <link rel="stylesheet" href="estilos/style.css" type="text/css">
+    <link rel="stylesheet" href="estilos/cadastro.css" type="text/css">
+    <link rel="stylesheet" href="estilos/impressora.css" media="print">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
@@ -18,6 +19,8 @@
             <a href="cadastro.html" target="_self">Cadastro</a>
         </nav>
     </header>
+
+    <hr>
 
     <main>
         <article>
@@ -40,7 +43,7 @@
                     </p>
                     <p>
                         <label for="itel">Número de Telefone</label>
-                        <input type="tel" name="tel" id="itel" placeholder="999 999 999" required pattern="^[0-9]{3} [0-9]{3} [0-9]{3}$">
+                        <input type="tel" name="tel" id="itel" placeholder="999999999" required pattern="^[0-9]{9}$">
                     </p>
                     <p>
                         <label for="idata">Data de Nascimento</label>
@@ -55,8 +58,8 @@
                     </fieldset>
                 </fieldset>
 
-                <fieldset>
-                    <legend>Outros dados do usuário</legend>
+                <fieldset id="outros-dados">
+                    <legend>Outros dados</legend>
                     <p>
                         <label for="ipais">País</label>
                         <input type="text" name="pais" id="ipais" list="lstpais" value="Angola" required placeholder="Seu país">
@@ -130,6 +133,43 @@
                             <option value="Programador"></option>
                         </datalist>
                     </p>
+
+                    <fieldset id="esportes">
+                        <legend>Esportes favoritos</legend>
+                        <p>
+                            <input type="checkbox" name="andebol" id="iandebol">
+                            <label for="iandebol">Andebol</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="basquete" id="ibasquete" checked>
+                            <label for="ibasquete">Basquete</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="formula1" id="iformula1" required>
+                            <label for="iformula1">Fórmula 1</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="futebol" id="ifutebol" checked>
+                            <label for="ifutebol">Futebol</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="moto-gp" id="imoto-gp">
+                            <label for="imoto-gp">Moto GP</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="tenis" id="itenis">
+                            <label for="itenis">Tênis</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="voleibol" id="ivoleibol">
+                            <label for="ivoleibol">Voleibol</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="wwe" id="iwwe">
+                            <label for="iwwe">WWE</label>
+                        </p>
+                    </fieldset>
+
                     <p>
                         <label for="imsg">Mensagem</label> <br>
                         <textarea name="msg" id="imsg" cols="30" rows="10" required placeholder="Escreva uma mensagem..."></textarea>

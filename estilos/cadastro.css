@@ -52,12 +52,20 @@ label{
     border-radius: 5px;
 }
 
+#inome:hover{
+    background-color: #9ce0e760;
+}
+
 #isenha{
     background-color: #ecbfae56;
     width: 200px;
     height: 26px;
     border-radius: 5px;
     padding: 4px;
+}
+
+#isenha:hover{
+    background-color: #9ce0e760;
 }
 
 #iemail{
@@ -68,12 +76,20 @@ label{
     border-radius: 5px;
 }
 
+#iemail:hover{
+    background-color: #9ce0e760;
+}
+
 #itel{
     height: 26px;
     width: 200px;
     background-color: #ecbfae56;
     padding: 4px;
     border-radius: 5px;
+}
+
+#itel:hover{
+    background-color: #9ce0e760;
 }
 
 #idata{
@@ -84,10 +100,15 @@ label{
     border-radius: 5px;
 }
 
+#idata:hover{
+    background-color: #9ce0e760;
+}
+
 #isexofem, #isexomasc{
     display: inline-block;
     margin-bottom: 14px;
 }
+
 
 #ipais{
     height: 26px;
@@ -95,6 +116,10 @@ label{
     background-color: #ecbfae56;
     padding: 4px;
     border-radius: 5px;
+}
+
+#ipais:hover{
+    background-color: #9ce0e760;
 }
 
 #iprov{
@@ -105,12 +130,57 @@ label{
     border-radius: 5px;
 }
 
+#iprov:hover{
+    background-color: #9ce0e760;
+}
+
 #iprof{
     height: 26px;
     width: 200px;
     background-color: #ecbfae56;
     padding: 4px;
     border-radius: 5px;
+}
+
+#iprof:hover{
+    background-color: #9ce0e760;
+}
+
+#esportes{
+    columns: 2;
+}
+
+#iandebol{
+    display: inline-block;
+}
+
+#ibasquete{
+    display: inline-block;
+}
+
+#iformula1{
+    display: inline-block;
+}
+
+#ifutebol{
+    display: inline-block;
+}
+
+#imoto-gp{
+    display: inline-block;
+    margin-top: 8px;
+}
+
+#itenis{
+    display: inline-block;
+}
+
+#ivoleibol{
+    display: inline-block;
+}
+
+#iwwe{
+    display: inline-block;
 }
 
 #imsg{
@@ -120,10 +190,15 @@ label{
     margin-top: 2px;
 }
 
+#imsg:hover{
+    background-color: #9ce0e760;
+}
+
 p#botoes{
     max-width: 400px;
     margin: auto;
     margin-top: -16px;
+    transform: translate(1%, 0px);
 }
 
 #enviar{
