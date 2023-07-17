@@ -224,3 +224,7 @@ p#botoes{
     font-size: 1em;
 }
 
+input:focus-within{
+    background-color: white;
+}
+
