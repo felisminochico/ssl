@@ -26,8 +26,14 @@
     padding: 0px;
 }
 
+
 body{
     background-color: var(--cor5);
+}
+
+body::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
 }
 
 header{
